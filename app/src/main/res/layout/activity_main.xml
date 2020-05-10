@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_1505"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/kisses_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/image"
+        android:layout_alignTop="@id/image"
+        android:layout_alignRight="@id/image"
+        android:layout_alignBottom="@id/image"
+        android:layout_centerInParent="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Happy Mother's day!"
+        android:textColor="@android:color/transparent"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/image"
+        android:text = " Tap this button! "
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="16dp"
+        android:background="#E13543"
+        android:textColor="@android:color/black"
+        android:onClick="getCongrats"
+        />
+
+</RelativeLayout>
